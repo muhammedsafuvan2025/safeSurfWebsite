@@ -878,6 +878,35 @@ document.addEventListener('DOMContentLoaded', function() {
             }
         });
     }
+
+    // Flip Card Touch Interaction
+    const flipCards = document.querySelectorAll('.flip-card');
+    
+    // Helper function to check if device is touch-enabled
+    function isTouchDevice() {
+        return ('ontouchstart' in window) || (navigator.maxTouchPoints > 0);
+    }
+    
+    // Add click/touch handlers only for touch devices
+    if (isTouchDevice()) {
+        flipCards.forEach(card => {
+            // Remove hover effect for touch devices
+            card.classList.add('touch-device');
+            
+            // Add click/touch handler
+            card.addEventListener('click', function(e) {
+                // Toggle flipped class
+                this.classList.toggle('flipped');
+                
+                // Remove flipped class from other cards
+                flipCards.forEach(otherCard => {
+                    if (otherCard !== this) {
+                        otherCard.classList.remove('flipped');
+                    }
+                });
+            });
+        });
+    }
 });
 
 function initPrivacyOdyssey() {

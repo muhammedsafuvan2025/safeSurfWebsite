@@ -231,50 +231,13 @@
                     </div>
                 </div>
 
-                <!-- Children's Privacy Section -->
-                <div class="policy-section" data-aos="fade-up">
-                    <div class="policy-header" onclick="toggleSection(this)">
-                        <div class="policy-icon">
-                            <i class="fas fa-child"></i>
-                        </div>
-                        <h2>6. Children's Privacy</h2>
-                        <div class="policy-toggle">
-                            <i class="fas fa-chevron-down"></i>
-                        </div>
-                    </div>
-                    <div class="policy-content">
-                        <div class="children-privacy-content">
-                            <div class="alert-box">
-                                <i class="fas fa-exclamation-triangle text-yellow-400"></i>
-                                <p>Safe Surf is not intended for use by children under the age of 13.</p>
-                            </div>
-                            <div class="policy-details">
-                                <ul class="policy-list">
-                                    <li>
-                                        <i class="fas fa-check-circle"></i>
-                                        <span>We do not knowingly collect data from children</span>
-                                    </li>
-                                    <li>
-                                        <i class="fas fa-check-circle"></i>
-                                        <span>Parents should supervise children's online activities</span>
-                                    </li>
-                                    <li>
-                                        <i class="fas fa-check-circle"></i>
-                                        <span>Contact us immediately if you believe we have inadvertently collected data from a child</span>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
                 <!-- Data Security Section -->
                 <div class="policy-section" data-aos="fade-up">
                     <div class="policy-header" onclick="toggleSection(this)">
                         <div class="policy-icon">
                             <i class="fas fa-lock"></i>
                         </div>
-                        <h2>7. Data Security</h2>
+                        <h2>6. Data Security</h2>
                         <div class="policy-toggle">
                             <i class="fas fa-chevron-down"></i>
                         </div>
@@ -340,7 +303,7 @@
                         <div class="policy-icon">
                             <i class="fas fa-history"></i>
                         </div>
-                        <h2>8. Changes to This Policy</h2>
+                        <h2>7. Changes to This Policy</h2>
                         <div class="policy-toggle">
                             <i class="fas fa-chevron-down"></i>
                         </div>
@@ -386,7 +349,7 @@
                         <div class="policy-icon">
                             <i class="fas fa-list-alt"></i>
                         </div>
-                        <h2>9. TL;DR Summary</h2>
+                        <h2>8. TL;DR Summary</h2>
                         <div class="policy-toggle">
                             <i class="fas fa-chevron-down"></i>
                         </div>
@@ -423,7 +386,7 @@
                         <div class="policy-icon">
                             <i class="fas fa-envelope"></i>
                         </div>
-                        <h2>10. Contact Us</h2>
+                        <h2>9. Contact Us</h2>
                         <div class="policy-toggle">
                             <i class="fas fa-chevron-down"></i>
                         </div>
@@ -577,15 +540,8 @@
                 'Control & Settings: Customize extension behavior through settings panel'
             ]);
 
-            // Children's Privacy
-            addSection('6. Children\'s Privacy', [
-                'Not intended for use by children under 13',
-                'No knowing collection of children\'s data',
-                'Parents should supervise children\'s online activities'
-            ]);
-
             // Data Security
-            addSection('7. Data Security', [
+            addSection('6. Data Security', [
                 'Local processing for enhanced privacy',
                 'Secure API key management with scoped access',
                 'Content-Security-Policy enforcement',
@@ -593,14 +549,14 @@
             ]);
 
             // Changes to Policy
-            addSection('8. Changes to This Policy', [
+            addSection('7. Changes to This Policy', [
                 'Updates communicated via Chrome Web Store listing',
                 'Extension update notifications',
                 'Change log maintained in extension'
             ]);
 
             // TL;DR Summary
-            addSection('9. TL;DR Summary', [
+            addSection('8. TL;DR Summary', [
                 'No collection or storage of personal data',
                 'All analysis happens locally in your browser',
                 'Privacy-focused AI analysis without PII',
@@ -608,7 +564,7 @@
             ]);
 
             // Contact Information
-            addSection('10. Contact Us', [
+            addSection('9. Contact Us', [
                 'Email: safuvan@example.com',
                 'Developer: Safuvan',
                 'Location: Canada'

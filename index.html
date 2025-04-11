@@ -53,6 +53,23 @@
             <img src="logo.PNG" alt="Safe Surf Logo" class="w-32 h-32 mx-auto mb-6" data-aos="zoom-in" data-aos-delay="300">
             <h1 class="text-5xl md:text-7xl font-bold mb-6 text-gradient">Safe Surf Extension</h1>
             <p class="text-xl md:text-2xl mb-8 max-w-3xl mx-auto">Understand website privacy policies at a glance with AI-powered scanning and analysis</p>
+            
+            <!-- Browser Compatibility -->
+            <div class="flex justify-center items-center gap-8 mb-8" data-aos="fade-up" data-aos-delay="150">
+                <div class="browser-logo-wrapper">
+                    <img src="https://raw.githubusercontent.com/alrra/browser-logos/main/src/chrome/chrome.svg" alt="Chrome" class="h-12 w-12 transition-all duration-300">
+                    <span class="text-sm text-gray-400 mt-2">Chrome</span>
+                </div>
+                <div class="browser-logo-wrapper">
+                    <img src="https://raw.githubusercontent.com/alrra/browser-logos/main/src/edge/edge.svg" alt="Edge" class="h-12 w-12 transition-all duration-300">
+                    <span class="text-sm text-gray-400 mt-2">Edge</span>
+                </div>
+                <div class="browser-logo-wrapper">
+                    <img src="https://raw.githubusercontent.com/alrra/browser-logos/main/src/firefox/firefox.svg" alt="Firefox" class="h-12 w-12 transition-all duration-300">
+                    <span class="text-sm text-gray-400 mt-2">Firefox</span>
+                </div>
+            </div>
+
             <div class="flex flex-wrap justify-center gap-6">
                 <div class="feature-btn-wrapper" data-aos="fade-up" data-aos-delay="200">
                     <a href="#features" class="feature-btn">
@@ -301,52 +318,35 @@
     </section>
 
     <!-- Security Visualizer Section -->
-    <section id="security-visualizer" class="py-20">
+    <section id="demo" class="py-20">
         <div class="container mx-auto px-4">
-            <h2 class="section-title" data-aos="fade-up">See It In Action</h2>
-            <p class="section-subtitle" data-aos="fade-up" data-aos-delay="100">Watch how Safe Surf scans and analyzes privacy policies for you</p>
+            <h2 class="section-title" data-aos="fade-up">Watch Safe Surf in Action</h2>
+            <p class="section-subtitle" data-aos="fade-up" data-aos-delay="100">See a small demo of our extension</p>
             
-            <div class="visualizer-container mt-12" data-aos="zoom-in">
-                <div class="visualizer-browser">
-                    <div class="browser-header">
-                        <div class="browser-controls">
-                            <span class="browser-dot"></span>
-                            <span class="browser-dot"></span>
-                            <span class="browser-dot"></span>
-                        </div>
-                        <div class="browser-address">
-                            <div class="secure-badge">
-                                <i class="fas fa-shield-alt"></i>
-                            </div>
-                            <span>https://</span>example.com/privacy-policy
-                        </div>
-                        <div class="browser-safe-badge">
-                            <img src="logo.PNG" alt="Safe Surf" class="h-6">
-                        </div>
+            <div class="video-player-wrapper mt-12" data-aos="zoom-in">
+                <div class="video-container">
+                    <video id="demo-video" class="demo-video" poster="logo.PNG" controls>
+                        <source src="demo.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                    <div class="video-overlay">
+                        <button class="play-btn">
+                            <i class="fas fa-play"></i>
+                        </button>
                     </div>
-                    <div class="browser-viewport">
-                        <div class="privacy-document">
-                            <div class="document-content">
-                                <div class="document-line"><span class="document-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span></div>
-                                <div class="document-line"><span class="document-text">Nullam eget felis eget nunc lobortis mattis.</span></div>
-                                <div class="document-line"><span class="document-text">Pellentesque habitant morbi tristique senectus.</span></div>
-                                <div class="document-line"><span class="document-text">We collect and <span class="keyword-risk">share</span> your <span class="keyword-risk">personal data</span> with <span class="keyword-risk">third parties</span>.</span></div>
-                                <div class="document-line"><span class="document-text">Ut enim ad minim veniam, quis nostrud exercitation.</span></div>
-                                <div class="document-line"><span class="document-text">We may use your <span class="keyword-risk">browsing history</span> for <span class="keyword-risk">targeted advertising</span>.</span></div>
-                                <div class="document-line"><span class="document-text">Duis aute irure dolor in reprehenderit in voluptate.</span></div>
-                                <div class="document-line"><span class="document-text">Excepteur sint occaecat cupidatat non proident.</span></div>
-                                <div class="document-line"><span class="document-text">Your data may be <span class="keyword-risk">stored indefinitely</span> and <span class="keyword-risk">sold to partners</span>.</span></div>
-                            </div>
-                            <div class="ai-summary">
-                                <div class="summary-header">
-                                    <svg class="openai-logo" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M19.7986 10.1025C20.0256 9.32806 20.0575 8.51253 19.892 7.7232C19.3999 5.48265 17.7388 3.69628 15.5354 3.03462C13.3319 2.37296 10.9878 2.91542 9.344 4.46764C8.6985 4.05542 7.97193 3.79993 7.21427 3.71822C4.97833 3.459 2.86612 4.80987 2.00799 6.87661C1.14987 8.94334 1.65864 11.3524 3.27604 12.8283C3.049 13.6026 3.01716 14.4182 3.18264 15.2076C3.67476 17.4481 5.33582 19.2345 7.53929 19.8961C9.74276 20.5578 12.0869 20.0153 13.7307 18.4631C14.3762 18.8753 15.1027 19.1308 15.8604 19.2125C18.0963 19.4717 20.2085 18.1208 21.0667 16.0541C21.9248 13.9874 21.416 11.5783 19.7986 10.1025ZM15.751 18.0323C14.7356 17.9844 13.7757 17.5374 13.0635 16.7898C13.0981 16.7625 13.1534 16.7234 13.2179 16.6773L15.868 14.9266C16.0391 14.8167 16.147 14.6253 16.147 14.4175V10.1435L17.528 10.9475C17.5372 10.9532 17.5445 10.9614 17.5489 10.9712C17.5532 10.981 17.5543 10.9919 17.552 11.0025V14.4175C17.549 16.4906 16.8099 17.8995 15.751 18.0323ZM4.67273 12.0275C4.22391 11.3518 4.01346 10.5451 4.07461 9.73501C4.07885 9.77148 4.08944 9.82198 4.10281 9.87939L5.08135 13.1373C5.12046 13.2992 5.23395 13.4338 5.38951 13.5048L9.53491 15.6878V18.1227C9.52511 18.1325 9.51266 18.1399 9.49889 18.1441C9.48512 18.1482 9.47052 18.1489 9.45635 18.1461C7.67289 17.6102 6.0796 16.3067 5.24273 14.5648C4.95705 13.7917 4.80077 12.9781 4.78025 12.1561C4.77966 12.1113 4.69945 12.0664 4.67273 12.0275ZM16.9178 9.06676L13.2051 7.10639C13.0474 7.01576 12.8576 7.01576 12.6998 7.10639L8.98711 9.06676V5.38173C8.98711 5.37014 8.99154 5.35897 8.99968 5.35058C8.99968 5.3422 9.004 5.33537 9.01084 5.33092C10.0357 4.89077 11.1648 4.78017 12.2578 5.01073C13.9635 5.36926 15.431 6.47698 16.1803 8.01726C16.2894 8.22901 16.6173 8.80973 16.8913 9.43048C16.9031 9.45698 16.9148 9.47939 16.9178 9.06676ZM7.55334 12.6492L6.30873 8.38642C6.28814 8.32657 6.25617 8.27192 6.21426 8.22517C6.21426 8.2168 6.20993 8.20998 6.2031 8.20552C6.2031 8.20107 6.19867 8.19833 6.19281 8.19833C5.20973 8.64089 4.44148 9.48701 4.08294 10.5291C3.72441 11.5713 3.80763 12.7152 4.31553 13.6939C4.32237 13.7053 4.32627 13.7177 4.32715 13.7306C4.32715 13.7435 4.32413 13.7564 4.31847 13.7676C4.31847 13.7775 4.31994 13.7866 4.32715 13.8089L4.3369 13.8284C4.41564 13.9804 4.51392 14.1244 4.6254 14.2548C5.08427 14.8311 5.69165 15.252 6.37335 15.4608L7.38662 15.8166C7.51247 15.8633 7.65105 15.8427 7.76194 15.76L11.5994 13.7623V12.0211C11.5994 11.8119 11.7087 11.6207 11.8797 11.5081L12.1577 11.3444L7.80381 8.85361C7.65251 8.76686 7.46759 8.76686 7.31629 8.85361L5.83642 9.73304C5.83447 9.73676 5.83349 9.74089 5.83349 9.74514C5.83349 9.74939 5.83447 9.75354 5.83642 9.75726L7.55334 12.6492ZM13.7356 11.3431L17.2381 9.30623L17.2433 9.30307C17.2657 9.28967 17.2827 9.26936 17.292 9.24582C17.3012 9.22228 17.3021 9.19683 17.2946 9.17267C17 8.54804 16.6327 7.96339 16.1998 7.43914C15.3531 6.34376 14.1644 5.558 12.813 5.219C11.8452 4.97723 10.8362 4.97723 9.86837 5.219C9.85311 5.219 9.83834 5.22397 9.82668 5.2332C9.81503 5.24242 9.80723 5.25536 9.80481 5.27001V9.55504C9.80481 9.76329 9.9127 9.9547 10.0835 10.0677L14.6242 12.6492C14.6399 12.6583 14.6636 12.6742 14.6917 12.6919L17.5516 14.3353C17.5694 14.3455 17.5896 14.3514 17.6102 14.3524C17.6309 14.3533 17.6515 14.3493 17.6703 14.3407C17.6891 14.332 17.7053 14.3189 17.7178 14.3027C17.7302 14.2864 17.7386 14.2674 17.7421 14.2473C17.8938 13.1989 17.713 12.1277 17.2368 11.2041C17.2329 11.1944 17.2266 11.1855 17.2182 11.1781C17.2099 11.1707 17.2 11.1651 17.1891 11.1616C17.1783 11.1581 17.1667 11.1569 17.1554 11.1582C17.1441 11.1596 17.1332 11.1634 17.1238 11.1692L16.0534 11.7998L13.7356 11.3431ZM18.0074 13.8284C17.9983 13.8172 17.9864 13.8089 17.9719 13.8039C17.9598 13.7989 17.947 13.797 17.9343 13.798C17.9217 13.799 17.9092 13.8031 17.8978 13.8099C17.8849 13.8176 17.8744 13.8284 17.8666 13.8409L16.8683 15.5036C16.8647 15.5095 16.8622 15.5158 16.8607 15.5225C16.8592 15.5292 16.8586 15.5362 16.8592 15.5431C16.8597 15.55 16.8613 15.5568 16.8638 15.5632C16.8664 15.5695 16.8699 15.5753 16.8743 15.5803C17.2915 15.9436 17.7864 16.2072 18.3188 16.3539C19.5651 16.7031 20.895 16.4284 21.8829 15.6253C21.8909 15.6174 21.8965 15.6075 21.8992 15.5966C21.9018 15.5857 21.9014 15.5744 21.8978 15.5637C21.8926 15.5501 21.8847 15.538 21.8745 15.5282C21.8644 15.5183 21.8525 15.5111 21.8396 15.5069C21.6071 15.4281 20.9739 15.1948 20.6069 15.0425C19.8091 14.7298 19.0996 14.2437 18.5341 13.6217C18.3546 13.4175 18.19 13.201 18.0415 12.9741C18.0321 12.9559 18.0181 12.9405 18.0009 12.9298C17.9842 12.9191 17.9654 12.9128 17.9459 12.9125C17.9269 12.9137 17.9089 12.9208 17.8941 12.933C17.8803 12.9458 17.8697 12.9618 17.8639 12.9802L17.0254 14.9759C17.0254 14.9759 17.0254 14.9816 17.0254 14.9845C17.0264 14.9883 17.028 14.9918 17.0304 14.9948C17.0328 14.9979 17.0357 15.0004 17.0391 15.0023C17.0426 15.0043 17.0464 15.0055 17.0504 15.0059C17.0544 15.0063 17.0584 15.006 17.0621 15.0048C17.1485 14.9759 17.2906 14.9378 17.4312 14.9009C17.439 14.898 17.4476 14.898 17.4554 14.9009C17.4629 14.9024 17.4697 14.9064 17.4751 14.9122C17.4804 14.918 17.4841 14.9252 17.4856 14.9331C17.4881 14.9407 17.488 14.9488 17.4856 14.9563L17.0709 15.8322C17.0668 15.8409 17.0645 15.8507 17.0645 15.8606C17.0645 15.8706 17.0668 15.8803 17.0709 15.889C17.0751 15.8977 17.0809 15.9052 17.0881 15.9109C17.0954 15.9166 17.1037 15.9205 17.1126 15.9222C17.5371 15.9923 17.9686 15.9892 18.3923 15.9131C18.8459 15.8298 19.2803 15.6709 19.6778 15.4433C20.0754 15.2157 20.4297 14.9231 20.7249 14.5791C21.0202 14.2351 21.2516 13.845 21.4091 13.4273C21.5665 13.0096 21.6477 12.5701 21.6489 12.1267C21.6489 12.0914 21.6429 12.0392 21.6367 11.9697C21.6211 11.7812 21.5794 11.5959 21.5128 11.4189C21.0499 10.1834 20.1086 9.19144 18.9132 8.65992C18.903 8.65547 18.892 8.65428 18.881 8.65652C18.8699 8.65876 18.8597 8.66433 18.8515 8.67251C18.8458 8.68066 18.8421 8.69034 18.8408 8.70054C18.8395 8.71073 18.8407 8.7211 18.8442 8.73067C18.8774 8.84164 18.9082 8.95648 18.9314 9.06833C19.0784 9.78645 19.0457 10.5342 18.8367 11.2339C18.6278 11.9337 18.2493 12.5665 17.7357 13.066C17.6983 13.1048 17.6594 13.1451 17.6238 13.1853L18.0529 13.8228C18.0593 13.8272 18.0647 13.8329 18.0687 13.8395C18.0726 13.8461 18.075 13.8534 18.0758 13.8611C18.0758 13.8688 18.0741 13.8764 18.0709 13.8833C18.0676 13.8902 18.0629 13.8962 18.0571 13.9008C18.0413 13.8772 18.0256 13.8536 18.0074 13.8284Z" fill="#64ffda"/>
-                                    </svg>
-                                    <span>OpenAI Summary</span>
-                                </div>
-                                <p>This privacy policy has concerning clauses about personal data collection, sharing with third parties, and indefinite data retention. The policy allows for your browsing history to be used for targeted advertising and permits selling your data to partners.</p>
-                            </div>
-                        </div>
+                </div>
+                <div class="video-features mt-8">
+                    <div class="feature-highlight">
+                        <i class="fas fa-shield-alt text-red-600"></i>
+                        <span>Real-time Privacy Scanning</span>
+                    </div>
+                    <div class="feature-highlight">
+                        <i class="fas fa-bolt text-red-600"></i>
+                        <span>Instant Risk Detection</span>
+                    </div>
+                    <div class="feature-highlight">
+                        <i class="fas fa-robot text-red-600"></i>
+                        <span>AI-Powered Analysis</span>
                     </div>
                 </div>
             </div>
@@ -450,7 +450,7 @@
             <div class="flex flex-col md:flex-row justify-between items-center">
                 <div class="mb-6 md:mb-0">
                     <img src="logo.PNG" alt="Safe Surf Logo" class="h-12 mb-3">
-                    <p class="text-gray-400">© 2023 Safe Surf Extension. All rights reserved.</p>
+                    <p class="text-gray-400">© 2025 Safe Surf Extension. All rights reserved.</p>
                 </div>
                 
                 <div class="flex flex-col items-center md:items-end">

@@ -840,6 +840,44 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // Privacy Odyssey - Data Packet Journey
     initPrivacyOdyssey();
+
+    // Video Player Functionality
+    const videoContainer = document.querySelector('.video-container');
+    const video = document.getElementById('demo-video');
+    const playBtn = document.querySelector('.play-btn');
+    const overlay = document.querySelector('.video-overlay');
+
+    if (playBtn && video) {
+        // Play button click handler
+        playBtn.addEventListener('click', function(e) {
+            e.stopPropagation(); // Prevent event from bubbling to overlay
+            videoContainer.classList.add('playing');
+            video.play();
+        });
+
+        video.addEventListener('play', function() {
+            videoContainer.classList.add('playing');
+        });
+
+        video.addEventListener('pause', function() {
+            videoContainer.classList.remove('playing');
+        });
+
+        video.addEventListener('ended', function() {
+            videoContainer.classList.remove('playing');
+        });
+
+        // Show overlay when video is paused
+        overlay.addEventListener('click', function() {
+            if (video.paused) {
+                video.play();
+                videoContainer.classList.add('playing');
+            } else {
+                video.pause();
+                videoContainer.classList.remove('playing');
+            }
+        });
+    }
 });
 
 function initPrivacyOdyssey() {
